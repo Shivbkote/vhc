@@ -1,0 +1,1169 @@
+/* =========================================================
+   VISHWA HARA CHAKRA
+   TEAM MEMBER PROFILE PAGES
+========================================================= */
+
+
+.team-profile-page {
+    background: #f8faf4;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.team-profile-page .header {
+    position: relative;
+    z-index: 50;
+}
+
+
+.team-profile-page .navbar {
+    min-height: 82px;
+}
+
+
+/* =========================================================
+   PROFILE HERO
+========================================================= */
+
+.profile-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        35px 0
+        110px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(168,197,91,.17),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(49,103,55,.08),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f7faf3
+        );
+}
+
+
+.profile-hero-glow {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -220px;
+    top: 80px;
+
+    border-radius: 50%;
+
+    border: 1px solid
+        rgba(93,129,50,.13);
+
+    box-shadow:
+        0 0 100px
+        rgba(168,197,91,.12);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.profile-breadcrumb {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 55px;
+
+    font-family:
+        "Space Mono",
+        monospace;
+
+    font-size: 9px;
+
+    letter-spacing: .06em;
+
+    color: #7b847b;
+}
+
+
+.profile-breadcrumb a {
+    color: #5d8132;
+
+    text-decoration: none;
+}
+
+
+.profile-breadcrumb strong {
+    font-weight: 700;
+
+    color: #263526;
+}
+
+
+/* =========================================================
+   HERO GRID
+========================================================= */
+
+.profile-hero-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(350px, .9fr)
+        minmax(400px, 1.1fr);
+
+    gap: clamp(
+        50px,
+        8vw,
+        120px
+    );
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.profile-image-wrap {
+    position: relative;
+}
+
+
+.profile-image-frame {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background:
+        #dfe9d6;
+
+    box-shadow:
+        0 30px 80px
+        rgba(27,48,29,.13);
+}
+
+
+.profile-image-frame::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: 2;
+
+    inset: 0;
+
+    border: 1px solid
+        rgba(255,255,255,.5);
+
+    border-radius: inherit;
+
+    pointer-events: none;
+}
+
+
+.profile-image-frame img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 1.1s
+        cubic-bezier(.2,.8,.2,1);
+}
+
+
+.profile-image-frame:hover img {
+    transform:
+        scale(1.045);
+}
+
+
+/* =========================================================
+   IMAGE INDEX
+========================================================= */
+
+.profile-index {
+    display: block;
+
+    margin-top: 15px;
+
+    font-family:
+        "Space Mono",
+        monospace;
+
+    font-size: 9px;
+
+    letter-spacing: .15em;
+
+    color: #728072;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.profile-intro {
+    max-width: 680px;
+}
+
+
+.profile-label {
+    display: inline-block;
+
+    font-family:
+        "Space Mono",
+        monospace;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+    letter-spacing: .18em;
+
+    font-weight: 700;
+
+    color: #5d8132;
+}
+
+
+.profile-intro h1 {
+    margin:
+        18px 0
+        25px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            54px,
+            7vw,
+            94px
+        );
+
+    line-height: .92;
+
+    letter-spacing: -.07em;
+
+    font-weight: 800;
+
+    color: #172518;
+}
+
+
+.profile-intro h1 em {
+    display: block;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight: 400;
+
+    color: #5d8132;
+}
+
+
+.profile-lead {
+    max-width: 590px;
+
+    margin: 0;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            18px,
+            2vw,
+            23px
+        );
+
+    line-height: 1.55;
+
+    letter-spacing: -.025em;
+
+    color: #435143;
+}
+
+
+.profile-line {
+    width: 70px;
+    height: 2px;
+
+    margin: 32px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #5d8132,
+            #a8c55b
+        );
+}
+
+
+.profile-description {
+    max-width: 550px;
+
+    margin: 0 0 32px;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+
+    color: #718071;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.profile-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding:
+        13px 18px;
+
+    border-radius: 100px;
+
+    border: 1px solid
+        rgba(93,129,50,.20);
+
+    background:
+        rgba(255,255,255,.7);
+
+    color: #315d34;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        box-shadow .35s ease;
+}
+
+
+.profile-button span {
+    font-size: 16px;
+
+    transition:
+        transform .35s ease;
+}
+
+
+.profile-button:hover {
+    transform:
+        translateY(-3px);
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 12px 30px
+        rgba(38,70,40,.10);
+}
+
+
+.profile-button:hover span {
+    transform:
+        translateY(4px);
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.profile-message {
+    padding:
+        120px 0;
+
+    background:
+        #ffffff;
+}
+
+
+.profile-message-grid {
+    display: grid;
+
+    grid-template-columns:
+        220px 1fr;
+
+    gap: 70px;
+}
+
+
+.profile-section-label {
+    padding-top: 10px;
+}
+
+
+.profile-section-label span {
+    font-family:
+        "Space Mono",
+        monospace;
+
+    font-size: 10px;
+
+    color: #a8c55b;
+}
+
+
+.profile-section-label p {
+    margin-top: 12px;
+
+    font-family:
+        "Space Mono",
+        monospace;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    letter-spacing: .12em;
+
+    color: #657265;
+}
+
+
+.profile-quote {
+    position: relative;
+
+    max-width: 850px;
+}
+
+
+.quote-mark {
+    position: absolute;
+
+    left: -45px;
+    top: -45px;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 90px;
+
+    line-height: 1;
+
+    color:
+        rgba(168,197,91,.28);
+}
+
+
+.profile-quote h2 {
+    position: relative;
+
+    margin: 0 0 35px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            38px,
+            5vw,
+            68px
+        );
+
+    line-height: 1.02;
+
+    letter-spacing: -.055em;
+
+    font-weight: 800;
+
+    color: #1b2b1d;
+}
+
+
+.profile-quote h2 em {
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight: 400;
+
+    color: #5d8132;
+}
+
+
+.profile-quote > p {
+    max-width: 670px;
+
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: #718071;
+}
+
+
+.quote-signature {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-top: 38px;
+
+    padding-left: 18px;
+
+    border-left:
+        2px solid #a8c55b;
+}
+
+
+.quote-signature strong {
+    font-size: 13px;
+
+    color: #273927;
+}
+
+
+.quote-signature span {
+    font-family:
+        "Space Mono",
+        monospace;
+
+    font-size: 8px;
+
+    letter-spacing: .12em;
+
+    color: #708070;
+}
+
+
+/* =========================================================
+   ROLE
+========================================================= */
+
+.profile-role {
+    padding:
+        90px 0;
+
+    background:
+        #f3f7ee;
+}
+
+
+.profile-role-card {
+    display: grid;
+
+    grid-template-columns:
+        .8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    padding:
+        55px;
+
+    border-radius: 26px;
+
+    background:
+        rgba(255,255,255,.72);
+
+    border: 1px solid
+        rgba(29,59,30,.09);
+
+    box-shadow:
+        0 20px 55px
+        rgba(29,59,30,.06);
+}
+
+
+.profile-role-card h2 {
+    margin:
+        13px 0 0;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            38px,
+            5vw,
+            60px
+        );
+
+    letter-spacing: -.055em;
+
+    color: #1b2b1d;
+}
+
+
+.profile-role-card > p {
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: #718071;
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+========================================================= */
+
+.profile-philosophy {
+    padding:
+        140px 0;
+
+    background:
+        #ffffff;
+}
+
+
+.profile-philosophy h2 {
+    max-width: 900px;
+
+    margin:
+        20px 0
+        25px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            50px,
+            8vw,
+            105px
+        );
+
+    line-height: .95;
+
+    letter-spacing: -.07em;
+
+    font-weight: 800;
+
+    color: #182719;
+}
+
+
+.profile-philosophy h2 em {
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight: 400;
+
+    color: #5d8132;
+}
+
+
+.profile-philosophy p {
+    max-width: 590px;
+
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    color: #718071;
+}
+
+
+/* =========================================================
+   NEXT PROFILE
+========================================================= */
+
+.profile-next {
+    padding:
+        25px 0
+        100px;
+
+    background:
+        #ffffff;
+}
+
+
+.next-profile {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding:
+        45px 0;
+
+    border-top:
+        1px solid
+        rgba(29,59,30,.12);
+
+    border-bottom:
+        1px solid
+        rgba(29,59,30,.12);
+
+    text-decoration: none;
+
+    transition:
+        padding .4s ease;
+}
+
+
+.next-profile:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+.next-profile span {
+    font-family:
+        "Space Mono",
+        monospace;
+
+    font-size: 8px;
+
+    letter-spacing: .15em;
+
+    color: #5d8132;
+}
+
+
+.next-profile h2 {
+    margin:
+        12px 0 5px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            30px,
+            4vw,
+            50px
+        );
+
+    line-height: 1;
+
+    letter-spacing: -.05em;
+
+    color: #1b2b1d;
+}
+
+
+.next-profile p {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #7a857a;
+}
+
+
+.next-profile > strong {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid
+        rgba(29,59,30,.12);
+
+    color: #5d8132;
+
+    font-size: 20px;
+
+    transition:
+        transform .4s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+
+.next-profile:hover > strong {
+    transform:
+        translateX(7px);
+
+    background:
+        #315d34;
+
+    color:
+        #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.profile-footer {
+    padding:
+        55px 0
+        30px;
+
+    background:
+        #17321b;
+
+    color: white;
+}
+
+
+.profile-footer-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding-bottom: 45px;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+
+.profile-footer-logo {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.profile-footer-top p {
+    margin: 0;
+
+    font-size: 12px;
+
+    color:
+        rgba(255,255,255,.58);
+}
+
+
+.profile-footer-top > a {
+    align-self: center;
+
+    color:
+        rgba(255,255,255,.75);
+
+    font-size: 11px;
+
+    text-decoration: none;
+}
+
+
+.profile-footer-top > a:hover {
+    color: #a8c55b;
+}
+
+
+.profile-footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding-top: 22px;
+
+    font-family:
+        "Space Mono",
+        monospace;
+
+    font-size: 8px;
+
+    letter-spacing: .08em;
+
+    color:
+        rgba(255,255,255,.42);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .profile-hero {
+        padding-bottom: 80px;
+    }
+
+
+    .profile-hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .profile-image-frame {
+        max-width: 650px;
+    }
+
+
+    .profile-intro {
+        max-width: 700px;
+    }
+
+
+    .profile-message-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .profile-role-card {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .profile-hero {
+        padding:
+            25px 0
+            70px;
+    }
+
+
+    .profile-breadcrumb {
+        margin-bottom: 35px;
+
+        font-size: 7px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .profile-hero-grid {
+        gap: 40px;
+    }
+
+
+    .profile-image-frame {
+        border-radius: 20px;
+
+        aspect-ratio: 4 / 5;
+    }
+
+
+    .profile-intro h1 {
+        font-size: 53px;
+    }
+
+
+    .profile-lead {
+        font-size: 17px;
+    }
+
+
+    .profile-description {
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+
+    .profile-message {
+        padding:
+            80px 0;
+    }
+
+
+    .profile-quote h2 {
+        font-size: 39px;
+    }
+
+
+    .quote-mark {
+        left: -5px;
+        top: -40px;
+
+        font-size: 70px;
+    }
+
+
+    .profile-quote > p {
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+
+    .profile-role {
+        padding:
+            65px 0;
+    }
+
+
+    .profile-role-card {
+        padding:
+            30px 25px;
+
+        border-radius: 20px;
+    }
+
+
+    .profile-philosophy {
+        padding:
+            90px 0;
+    }
+
+
+    .profile-philosophy h2 {
+        font-size: 52px;
+    }
+
+
+    .next-profile {
+        padding:
+            35px 0;
+    }
+
+
+    .next-profile h2 {
+        font-size: 28px;
+
+        line-height: 1.1;
+    }
+
+
+    .next-profile > strong {
+        width: 42px;
+        height: 42px;
+
+        flex-shrink: 0;
+    }
+
+
+    .profile-footer-top {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    .profile-footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .profile-image-frame img,
+    .profile-button,
+    .profile-button span,
+    .next-profile,
+    .next-profile > strong {
+        transition: none !important;
+    }
+
+}
+.product-visual {
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0;
+    padding: 0;
+    border-radius: 32px 32px 0 0;
+    overflow: visible !important;
+    line-height: 0;
+}
+
+.product-visual img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    min-width: 0;
+    object-fit: contain !important;
+    object-position: center center;
+    margin: 0;
+    padding: 0;
+}
